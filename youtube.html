@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-segment">
+        <div class="menu-container">
+          <img class="menu-icon" src="icons/hamburger-menu.svg">
+        </div>
+        <img class="logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-segment">
+        <input class="search-input" type="text" placeholder="Search">
+        <button class="search-btn">
+          <img class="search-img" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-btn">
+          <img class="voice-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-segment">
+        <div class="upload-container">
+          <img class="upload-img" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="apps-icon" src="icons/youtube-apps.svg">
+        <div class="notifications-container">
+          <img class="notifications-img" src="icons/notifications.svg">
+          <div class="notifications-count">1</div>
+        </div>
+        <img class="user-pic" src="channel-pictures/currentUser.webp">
+      </div>
+      <section class="topics">
+        <button class="topic-btn topic-selected">All</button>
+        <button class="topic-btn">Gaming</button>
+        <button class="topic-btn">Music</button>
+        <button class="topic-btn">Sports</button>
+        <button class="topic-btn">Mixes</button>
+        <button class="topic-btn">Live</button>
+        <button class="topic-btn">Playlists</button>
+        <button class="topic-btn">Inventions</button>
+        <button class="topic-btn">AI</button>
+        <button class="topic-btn">Watched</button>
+        <button class="topic-btn">Live Television</button>
+        <button class="topic-btn">Recently uploaded</button>
+        <button class="topic-btn">History</button>
+        <button class="topic-btn">New to you</button>
+      </section>
+    </header>
+
+    <nav class="navigation">
+      <div class="nav-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="nav-link">
+        <img src="icons/youtube-shorts.svg">
+        <div>Shorts</div>
+      </div>
+      <div class="nav-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="nav-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="nav-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="nav-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="nav-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/speed.webp">
+            <div class="video-duration"></div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/speedChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                irl stream in Hungary 🇭🇺
+              </p>
+              <p class="author">
+                IShowSpeed
+              </p>
+              <p class="stats">
+                3M views &#183; 2 hours ago
+              </p>
+              <div class="live">          
+                <img class="live-img" src="icons/youtube-live.png">
+                <div class="live-text">LIVE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/fish.webp">
+            <div class="video-duration">15:11</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/fishChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                Filipino Seafood Tour! The Real King of Tuna in Mindanao!
+              </p>
+              <p class="author">
+                Best Ever Food Review Show
+              </p>
+              <p class="stats">
+                6.2M views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/mrBeast.webp">
+            <div class="video-duration">41:26</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/mrBeastChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                50 YouTubers Fight For $1,000,000
+              </p>
+              <p class="author">
+                MrBeast
+              </p>
+              <p class="stats">
+                126M views &#183; 3 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/future.webp">
+            <div class="video-duration">18:36</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/futureChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                He Spent a Year in 3906 | This is what Paul Amadeus Dienach saw
+              </p>
+              <p class="author">
+                The Why Files
+              </p>
+              <p class="stats">
+                4.3M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/linkedin.webp">
+            <div class="video-duration">10:48</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/linkedinChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                I Asked LinkedIn Software Engineers How To Get Hired
+              </p>
+              <p class="author">
+                Namahn Kapur
+              </p>
+              <p class="stats">
+                72K views &#183; 12 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/numberPhile.webp">
+            <div class="video-duration">20:21</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/numberPhileChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                The Freshman's Dream (a classic mistake) - Numberphile
+              </p>
+              <p class="author">
+                Numberphile
+              </p>
+              <p class="stats">
+                54K views &#183; 9 hours ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/Europe.webp">
+            <div class="video-duration">15:48</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/EuropeChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                I Wanted To See Europe
+              </p>
+              <p class="author">
+                Bernardo Bacalhau
+              </p>
+              <p class="stats">
+                743K views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/dodgers.webp">
+            <div class="video-duration">9:35</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/fishChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                Dodgers vs. Tigers Game Highlights (7/14/24) | MLB Highlights
+              </p>
+              <p class="author">
+                MLB
+              </p>
+              <p class="stats">
+                106K views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/daBaby.webp">
+            <div class="video-duration">3:07</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/daBabyChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                DABABY - NOT LIKE US (FREESTYLE)
+              </p>
+              <p class="author">
+                DaBaby
+              </p>
+              <p class="stats">
+                10M views &#183; 1 month ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/IA.webp">
+            <div class="video-duration">19:18</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/IAChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                How Ai Is About To Transform The World’s Economy
+              </p>
+              <p class="author">
+                Andrei Jikn
+              </p>
+              <p class="stats">
+                106K views &#183; 22 hours ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/NY.webp">
+            <div class="video-duration">11:56</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/NYChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                My New Life Living In NYC at 22
+              </p>
+              <p class="author">
+                Andrew James
+              </p>
+              <p class="stats">
+                817K views &#183; 5 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-container">
+            <img class="thumbnail-img" src="thumbnails/Brasil.webp">
+            <div class="video-duration">25:53</div>
+          </div>
+          <div class="info-grid">
+            <div class="channel-pic">
+              <img class="profile-img" src="channel-pictures/FanumChannel.jpg">
+            </div>
+            <div class="details">
+              <p class="title">
+                Fanum's First Time Eating Brazilian Food..😂
+              </p>
+              <p class="author">
+                Fanum Live
+              </p>
+              <p class="stats">
+                224K views &#183; 2 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
